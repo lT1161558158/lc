@@ -74,6 +74,11 @@ public class TreeNode {
         }
     }
 
+    @Override
+    public String toString() {
+        return "" + val;
+    }
+
     public static void main(String[] args) {
         TreeNode treeNode = fromArray(new Integer[]{1, 2, 3, 4, 5, null, 7, null, 9});
         System.out.println(treeNode.structString());

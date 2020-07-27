@@ -3,9 +3,9 @@ package top.trister.tree;
 import top.trister.tree.struct.TreeNode;
 
 public class FindModeInBST {
-    public int[] findMode(TreeNode root) {
-
-    }
+//    public int[] findMode(TreeNode root) {
+// TODO findMode
+//    }
     void rank(TreeNode node,int rank,TreeNode rankNode,TreeNode before){
         if (node==null)
             return;
