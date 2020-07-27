@@ -12,12 +12,14 @@ import top.trister.tree.struct.TreeNode;
 public class ConvertBST2GreaterTree {
     int sum = 0;
 
-    //反中序遍历
+    //反中序遍历,操作时需要取出一个累加和
     public TreeNode convertBST(TreeNode root) {
         if (root != null) {
             convertBST(root.right);
+            ///对值进行操作操作
             sum += root.val;
             root.val = sum;
+            //-------------
             convertBST(root.left);
         }
         return root;
